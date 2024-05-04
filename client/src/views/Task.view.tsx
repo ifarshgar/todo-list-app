@@ -9,6 +9,7 @@ import UncheckedCircle from '@mui/icons-material/RadioButtonUnchecked';
 import Tooltip from '@mui/material/Tooltip';
 import { TaskType } from 'src/types';
 import { TestID } from 'src/testID';
+import { If } from 'Common/If';
 
 export const Task: React.FC<{
   task: TaskType;
@@ -54,16 +55,17 @@ export const Task: React.FC<{
         <DeleteIcon className="light-grey delete-icon" onClick={() => onDelete(task.id)} />
       </Tooltip>
 
-      {!taskDone && (
+      <If condition={!taskDone}>
         <Tooltip title="Mark as done">
           <UncheckedCircle className="light-grey done-btn" onClick={onClick} />
         </Tooltip>
-      )}
-      {taskDone && (
+      </If>
+
+      <If condition={taskDone}>
         <Tooltip title="Mark as undone">
           <CheckedCircle className="purple done-btn" onClick={onClick} />
         </Tooltip>
-      )}
+      </If>
     </Stack>
   );
 };

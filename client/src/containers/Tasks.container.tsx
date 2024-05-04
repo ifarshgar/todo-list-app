@@ -48,7 +48,7 @@ export const TasksContainer: React.FC<TaskContainerPropTypes> = ({
   };
 
   const filterTasksByDone = (items: TaskType[]): TaskType[] => {
-    return items.filter((task) => task.done === showDoneTasks);
+    return items.filter((task) => !!task.done === showDoneTasks);
   };
 
   const filterTasksByCategory = (items: TaskType[]): TaskType[] => {

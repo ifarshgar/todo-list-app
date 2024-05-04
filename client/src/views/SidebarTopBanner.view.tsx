@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import TodoIcon from 'Images/todo-icon.jpg';
+import TodoIcon from 'Images/todo-icon.png';
 import { TestID } from 'src/testID';
 
 export const SidebarTopBanner = () => {

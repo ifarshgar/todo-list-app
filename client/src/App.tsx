@@ -34,14 +34,7 @@ export default function App() {
       });
 
     getTasks()
-      .then((tasks) =>
-        setTasks(() =>
-          tasks.map((task: TaskType) => {
-            const obj = { ...task, done: !!task.done };
-            return obj;
-          })
-        )
-      )
+      .then((tasks) => setTasks(tasks))
       .catch(() => {
         console.log('Failed to fetch the tasks from the server.');
         setTasks(mockTasks);
