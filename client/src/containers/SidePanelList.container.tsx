@@ -1,5 +1,6 @@
 import React from 'react';
 import List from '@mui/material/List';
+import Stack from '@mui/material/Stack';
 import { SidebarListButton } from 'Views/SidebarListButton.view';
 import { FilterItem } from 'Views/FilterItem.view';
 import { AddFilterContainer } from './AddFilter.container';
@@ -36,15 +37,17 @@ export const SidePanelListContainer: React.FC<{
         onClick={() => setShowDoneTasks(false)}
       />
 
-      {categories.map((category) => (
-        <FilterItem
-          key={category.label}
-          label={category.label}
-          className={category.color}
-          clickHandler={() => filterHandler(category.label)}
-          selected={category.label === filter}
-        />
-      ))}
+      <Stack className="side-panel-categories">
+        {categories.map((category) => (
+          <FilterItem
+            key={category.label}
+            label={category.label}
+            className={category.color}
+            clickHandler={() => filterHandler(category.label)}
+            selected={category.label === filter}
+          />
+        ))}
+      </Stack>
 
       <AddFilterContainer categories={categories} setCategories={setCategories} />
 

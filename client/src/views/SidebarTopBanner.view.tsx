@@ -1,12 +1,12 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import ForstaIcon from 'Images/forsta.png';
+import TodoIcon from 'Images/todo-icon.jpg';
 import { TestID } from 'src/testID';
 
 export const SidebarTopBanner = () => {
   return (
     <Stack direction="row" alignItems="center" mt={2} mb={2} data-testid={TestID.SidebarTopBanner}>
-      <img src={ForstaIcon} alt="Forsta" className="avatar" />
+      <img src={TodoIcon} alt="Forsta" className="avatar" />
       <Stack direction="column">
         <Typography variant="body1" ml={2} data-testid={TestID.SidebarTopBannerTitle}>
           Do-it

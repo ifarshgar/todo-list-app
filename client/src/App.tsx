@@ -6,6 +6,7 @@ import { MainContentContainer } from 'Containers/MainContent.container';
 import { AppContextType, CategoryType, TaskType } from './types';
 import { getCategories, getTasks } from './api';
 import './styles.scss';
+import { mockCategories, mockTasks } from 'Common/constants';
 
 export const AppContext = createContext<AppContextType>({
   categories: [],
@@ -29,7 +30,7 @@ export default function App() {
       .then((categories) => setCategories(categories))
       .catch(() => {
         console.log('Failed to fetch the categories from the server.');
-        setCategories([]);
+        setCategories(mockCategories);
       });
 
     getTasks()
@@ -43,7 +44,7 @@ export default function App() {
       )
       .catch(() => {
         console.log('Failed to fetch the tasks from the server.');
-        setTasks([]);
+        setTasks(mockTasks);
       });
   }, []);
 

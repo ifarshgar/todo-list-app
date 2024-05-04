@@ -68,6 +68,11 @@ h3 {
   margin: 20px;
 }
 
+.side-panel-categories {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
 .purple {
   color: var(--color-purple);
 }
@@ -161,3 +166,4 @@ h3 {
 .category-circle.active {
   font-size: 25px;
 }
+
