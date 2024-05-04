@@ -6,14 +6,14 @@
 
 Open the application folder within a terminal and navigate to the `server` folder. Then run the following commands. These commands will install the required dependecies by npm and starts the backend of the app. 
 ```bash
-npm install
-npm start
+yarn
+yarn start
 ```
 
 on another terminal window or tab navigate to the folder of the application and type the following commands to get the frontend of the app up and running. 
 ```bash
-npm install
-npm start
+yarn
+yarn start
 ```
 
 ## Application functionality

@@ -1,5 +1,5 @@
-import { insertOrUpdateCategories, insertOrUpdateTasks, removeTask } from 'api';
-import { CategoryType, ServerMessage, TaskType } from 'types';
+import { insertOrUpdateCategories, insertOrUpdateTasks, removeTask } from './index';
+import { CategoryType, ServerMessage, TaskType } from 'src/types';
 
 export const persistTask = (task: TaskType) => {
   insertOrUpdateTasks(task)

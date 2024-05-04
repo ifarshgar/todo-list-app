@@ -1,8 +1,8 @@
-import { persistCategory } from 'api/helper';
 import React, { useState } from 'react';
-import { CategoryType, SetStateType } from 'types';
-import { AddFilterItem } from 'views/AddFilterItem.view';
-import { FilterItem } from 'views/FilterItem.view';
+import { persistCategory } from 'Api/helper';
+import { CategoryType, SetStateType } from 'src/types';
+import { AddFilterItem } from 'Views/AddFilterItem.view';
+import { FilterItem } from 'Views/FilterItem.view';
 
 export const AddFilterContainer: React.FC<{
   categories: CategoryType[];

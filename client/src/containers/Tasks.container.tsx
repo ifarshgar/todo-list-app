@@ -1,8 +1,8 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
-import { Task } from 'views/Task.view';
-import { SetStateType, SetStateTypeSingle, TaskType } from 'types';
-import { deleteTask, persistTask } from 'api/helper';
+import { Task } from 'Views/Task.view';
+import { SetStateType, TaskType } from 'src/types';
+import { deleteTask, persistTask } from 'Api/helper';
 
 type TaskContainerPropTypes = {
   getTaskColor: (taskCategory: string) => string;
@@ -10,7 +10,6 @@ type TaskContainerPropTypes = {
   setTasks: SetStateType<TaskType>;
   showDoneTasks: boolean;
   filter: string | null;
-  setFilter: SetStateTypeSingle<string | null>;
 };
 
 export const TasksContainer: React.FC<TaskContainerPropTypes> = ({
@@ -19,7 +18,6 @@ export const TasksContainer: React.FC<TaskContainerPropTypes> = ({
   setTasks,
   showDoneTasks,
   filter,
-  setFilter,
 }) => {
   const onDelete = (id: number) => {
     const remainingTasks = tasks.filter((task) => task.id !== id);

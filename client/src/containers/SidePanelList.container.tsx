@@ -1,10 +1,10 @@
 import React from 'react';
 import List from '@mui/material/List';
-import { SidebarListButton } from 'views/SidebarListButton.view';
-import { FilterItem } from 'views/FilterItem.view';
-import { ListIcons } from 'views/SidebarListIcon.view';
-import { CategoryType, SetStateType, SetStateTypeSingle } from 'types';
+import { SidebarListButton } from 'Views/SidebarListButton.view';
+import { FilterItem } from 'Views/FilterItem.view';
 import { AddFilterContainer } from './AddFilter.container';
+import { ListIcons } from 'Common/constants';
+import { CategoryType, SetStateType, SetStateTypeSingle } from 'src/types';
 
 export const SidePanelListContainer: React.FC<{
   setShowDoneTasks: SetStateTypeSingle<boolean>;

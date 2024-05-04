@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { SidebarListButton } from 'views/SidebarListButton.view';
-import { ListIcons } from 'views/SidebarListIcon.view';
+import { ListIcons } from 'Common/constants';
+import { SidebarListButton } from 'Views/SidebarListButton.view';
 
 describe('SidebarListButton.view tests', () => {
   it('renders SidebarTopBanner', () => {

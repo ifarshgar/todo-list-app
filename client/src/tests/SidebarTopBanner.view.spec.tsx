@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { TestID } from 'testID';
-import { SidebarTopBanner } from 'views/SidebarTopBanner.view';
+import { TestID } from 'src/testID';
+import { SidebarTopBanner } from 'Views/SidebarTopBanner.view';
 
 describe('SidebarTopBanner.view tests', () => {
   it('renders SidebarTopBanner', () => {

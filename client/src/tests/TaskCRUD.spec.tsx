@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { AddTaskContainer } from 'containers/AddTask.container';
-import { TestID } from 'testID';
-import { CategoryType, SetStateType, TaskType } from 'types';
+import { AddTaskContainer } from 'Containers/AddTask.container';
+import { TestID } from 'src/testID';
+import { CategoryType, SetStateType, TaskType } from 'src/types';
 
 const mockTask: TaskType = {
   id: 1,

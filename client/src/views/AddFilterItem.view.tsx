@@ -23,7 +23,7 @@ export const AddFilterItem: React.FC<{
             sx={{ ml: 2, mr: 2, width: '100px' }}
             value={value}
             onKeyUp={(e) => handler(e.key)}
-            onBlur={(e) => handler('Escape')}
+            onBlur={() => handler('Escape')}
             onChange={(e) => onChange(e.target.value)}
           />
         </ListItemIcon>

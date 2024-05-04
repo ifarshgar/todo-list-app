@@ -1,9 +1,9 @@
 import Stack from '@mui/material/Stack';
-import { SidebarTopBanner } from 'views/SidebarTopBanner.view';
+import { SidebarTopBanner } from 'Views/SidebarTopBanner.view';
 import { useContext, useState } from 'react';
-import { AppContext } from 'App';
+import { AppContext } from 'src/App';
 import { SidePanelListContainer } from './SidePanelList.container';
-import { SimpleDialog } from 'views/SimpleDialog.view';
+import { SimpleDialog } from 'Views/SimpleDialog.view';
 import Typography from '@mui/material/Typography';
 
 export const SidePanelContainer = () => {

@@ -1,7 +1,7 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import ForstaIcon from '../images/forsta.png';
-import { TestID } from 'testID';
+import ForstaIcon from 'Images/forsta.png';
+import { TestID } from 'src/testID';
 
 export const SidebarTopBanner = () => {
   return (

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { TestID } from 'testID';
-import { TaskType } from 'types';
-import { MainContentTopBanner } from 'views/MainContentTopBanner.view';
+import { TestID } from 'src/testID';
+import { TaskType } from 'src/types';
+import { MainContentTopBanner } from 'Views/MainContentTopBanner.view';
 
 const mockTask: TaskType = {
   id: 1,

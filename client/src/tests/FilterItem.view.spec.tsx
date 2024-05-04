@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { TestID } from 'testID';
-import { FilterItem } from 'views/FilterItem.view';
+import { FilterItem } from 'Views/FilterItem.view';
+import { TestID } from 'src/testID';
 
 const mockCategory = { label: 'Personal', color: 'red' };
 

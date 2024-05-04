@@ -3,14 +3,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import FinishedIcon from '@mui/icons-material/AssignmentTurnedIn';
 import EventIcon from '@mui/icons-material/Event';
 import HelpIcon from '@mui/icons-material/Help';
-import { TestID } from 'testID';
-
-export enum ListIcons {
-  Settings = 'settings',
-  FinishedTasks = 'finished-tasks',
-  EventIcon = 'event-icon',
-  HelpIcon = 'help-icon',
-}
+import { ListIcons } from 'Common/constants';
+import { TestID } from 'src/testID';
 
 export const SidebarListIcon: React.FC<{ icon: ListIcons; className: string }> = ({
   icon,

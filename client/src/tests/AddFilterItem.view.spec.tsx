@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { AddFilterItem } from 'views/AddFilterItem.view';
+import { AddFilterItem } from 'Views/AddFilterItem.view';
 
 describe('AddFilterIitem.view tests', () => {
   it('Renders SimpleDialog', () => {

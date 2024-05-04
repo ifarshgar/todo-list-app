@@ -4,7 +4,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Stack from '@mui/material/Stack';
-import { ListIcons, SidebarListIcon } from './SidebarListIcon.view';
+import { SidebarListIcon } from './SidebarListIcon.view';
+import { ListIcons } from 'Common/constants';
 
 export const SidebarListButton: React.FC<{
   label: string;

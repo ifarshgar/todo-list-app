@@ -1,10 +1,10 @@
 import { createContext, useEffect, useMemo, useState } from 'react';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
-import { SidePanelContainer } from 'containers/SidePanel.container';
-import { MainContentContainer } from 'containers/MainContent.container';
-import { AppContextType, CategoryType, TaskType } from 'types';
-import { getCategories, getTasks } from 'api';
+import { SidePanelContainer } from 'Containers/SidePanel.container';
+import { MainContentContainer } from 'Containers/MainContent.container';
+import { AppContextType, CategoryType, TaskType } from './types';
+import { getCategories, getTasks } from './api';
 import './styles.scss';
 
 export const AppContext = createContext<AppContextType>({
@@ -36,7 +36,7 @@ export default function App() {
       .then((tasks) =>
         setTasks(() =>
           tasks.map((task: TaskType) => {
-            const obj = { ...task, done: task.done ? true : false };
+            const obj = { ...task, done: !!task.done };
             return obj;
           })
         )

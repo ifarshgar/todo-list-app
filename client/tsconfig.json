@@ -1,28 +1,51 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
     ],
-    "allowJs": true,
+    "module": "ESNext",
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src",
-    "noUnusedLocals": true
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "Api/*": [
+        "./src/api/*"
+      ],
+      "Common/*": [
+        "./src/common/*"
+      ],
+      "Containers/*": [
+        "./src/containers/*"
+      ],
+      "Images/*": [
+        "./src/images/*"
+      ],
+      "Views/*": [
+        "./src/views/*"
+      ],
+    },
   },
   "include": [
     "src"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { AddTask } from 'views/AddTask.view';
+import { AddTask } from 'Views/AddTask.view';
 
 describe('AddTask.view tests', () => {
   it('Renders SimpleDialog', () => {

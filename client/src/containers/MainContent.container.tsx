@@ -1,12 +1,12 @@
-import Stack from '@mui/material/Stack';
-import { MainContentTopBanner } from 'views/MainContentTopBanner.view';
 import { useCallback, useContext } from 'react';
-import { AppContext } from 'App';
+import Stack from '@mui/material/Stack';
+import { MainContentTopBanner } from 'Views/MainContentTopBanner.view';
 import { TasksContainer } from './Tasks.container';
 import { AddTaskContainer } from './AddTask.container';
+import { AppContext } from 'src/App.tsx';
 
 export const MainContentContainer = () => {
-  const { categories, tasks, setTasks, filter, setFilter, showDoneTasks } = useContext(AppContext);
+  const { categories, tasks, setTasks, filter, showDoneTasks } = useContext(AppContext);
 
   const getTaskColor = useCallback(
     (taskCategory: string) => {
@@ -30,7 +30,6 @@ export const MainContentContainer = () => {
         setTasks={setTasks}
         showDoneTasks={showDoneTasks}
         filter={filter}
-        setFilter={setFilter}
       />
     </Stack>
   );

@@ -1,4 +1,4 @@
-import { CategoryType, TaskType } from 'types';
+import { CategoryType, TaskType } from 'src/types';
 
 /**
  * Gets all the categories

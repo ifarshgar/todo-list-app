@@ -7,7 +7,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { TestID } from 'testID';
+import { TestID } from 'src/testID';
 
 const PaperComponent = ({ ...props }) => {
   const nodeRef = React.useRef(null);

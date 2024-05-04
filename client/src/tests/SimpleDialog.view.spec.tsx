@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { TestID } from 'testID';
-import { SimpleDialog } from 'views/SimpleDialog.view';
+import { TestID } from 'src/testID';
+import { SimpleDialog } from 'Views/SimpleDialog.view';
 
 describe('SimpleDialog.view tests', () => {
   it('Renders SimpleDialog', () => {

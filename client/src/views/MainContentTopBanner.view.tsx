@@ -1,7 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
-import { TaskType } from 'types';
-import { TestID } from 'testID';
+import { TaskType } from 'src/types';
+import { TestID } from 'src/testID';
 
 export const MainContentTopBanner: React.FC<{ focusedTask?: TaskType }> = ({ focusedTask }) => (
   <>

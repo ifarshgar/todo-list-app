@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import UncheckedCircle from '@mui/icons-material/RadioButtonUnchecked';
 import Tooltip from '@mui/material/Tooltip';
-import { TaskType } from 'types';
-import { TestID } from 'testID';
+import { TaskType } from 'src/types';
+import { TestID } from 'src/testID';
 
 export const Task: React.FC<{
   task: TaskType;

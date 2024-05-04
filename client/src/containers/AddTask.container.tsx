@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { CategoryType, SetStateType, TaskType } from 'types';
-import { AddTask } from 'views/AddTask.view';
+import { CategoryType, SetStateType, TaskType } from 'src/types';
+import { AddTask } from 'Views/AddTask.view';
 import Tooltip from '@mui/material/Tooltip';
 import Circle from '@mui/icons-material/Circle';
-import { persistTask } from 'api/helper';
+import { persistTask } from 'Api/helper';
 
 export const AddTaskContainer: React.FC<{
   categories: CategoryType[];
