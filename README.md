@@ -36,4 +36,3 @@ yarn start
 ## TESTS
 
 - All functionality is tested with the [React testing library](https://testing-library.com/).
-
