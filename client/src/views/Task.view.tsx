@@ -13,10 +13,10 @@ import { If } from 'Common/If';
 
 export const Task: React.FC<{
   task: TaskType;
-  onChange: (id: number, str: string) => void;
+  onChange: (id: string, str: string) => void;
   getTaskColor: (taskCategory: string) => string;
-  onDelete: (id: number) => void;
-  onDone: (id: number) => void;
+  onDelete: (id: string) => void;
+  onDone: (id: string) => void;
 }> = ({ task, onChange, getTaskColor, onDelete, onDone }) => {
   const [taskDone, setTaskDone] = useState<boolean>(task.done);
 

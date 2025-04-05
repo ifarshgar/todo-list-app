@@ -36,7 +36,7 @@ export const insertOrUpdateTasks = (task: TaskType) =>
     body: JSON.stringify({ ...task }),
   }).then((res) => res.json());
 
-export const removeTask = (id: number) =>
+export const removeTask = (id: string) =>
   fetch('http://localhost:8888/tasks', {
     method: 'DELETE',
     headers: {

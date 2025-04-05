@@ -4,7 +4,7 @@ import { TaskType } from 'src/types';
 import { Task } from 'Views/Task.view';
 
 const mockTask: TaskType = {
-  id: 1,
+  id: '1',
   category: 'Personal',
   text: 'Write UI tests',
   time: '08:01 am',

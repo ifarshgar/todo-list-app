@@ -19,13 +19,13 @@ export const TasksContainer: React.FC<TaskContainerPropTypes> = ({
   showDoneTasks,
   filter,
 }) => {
-  const onDelete = (id: number) => {
+  const onDelete = (id: string) => {
     const remainingTasks = tasks.filter((task) => task.id !== id);
     setTasks(remainingTasks);
     deleteTask(id);
   };
 
-  const onChange = (id: number, str: string) => {
+  const onChange = (id: string, str: string) => {
     const clonedTasks = [...tasks];
     for (const task of clonedTasks) {
       if (task.id === id) {
@@ -36,7 +36,7 @@ export const TasksContainer: React.FC<TaskContainerPropTypes> = ({
     setTasks(clonedTasks);
   };
 
-  const onDone = (id: number) => {
+  const onDone = (id: string) => {
     const clonedTasks = tasks.map((task) => {
       if (task.id === id) {
         task.done = !task.done;

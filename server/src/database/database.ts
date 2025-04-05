@@ -150,7 +150,7 @@ export const removeCategory = async (label: string) => {
 };
 
 
-export const getTaskById = async (id: number) => {
+export const getTaskById = async (id: string) => {
   const query = 'SELECT * FROM Task WHERE id = ?';
   const record = await getOne(query, [id]);
   return record;
@@ -163,7 +163,7 @@ export const getAllTasks = async () => {
 };
 
 export const insertOrUpdateTask = async (
-  id: number,
+  id: string,
   category: string,
   text: string,
   time: string,
@@ -182,7 +182,7 @@ export const insertOrUpdateTask = async (
   }
 };
 
-export const removeTask = async (id: number) => {
+export const removeTask = async (id: string) => {
   const deleteQuery = 'DELETE FROM Task WHERE id = ?';
   const success = await remove(deleteQuery, id);
   return success;

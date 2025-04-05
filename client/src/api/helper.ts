@@ -9,7 +9,7 @@ export const persistTask = (task: TaskType) => {
     .catch((err) => console.error(err));
 };
 
-export const deleteTask = (id: number) => {
+export const deleteTask = (id: string) => {
   removeTask(id)
     .then((response: ServerMessage) => {
       console.log('server response: ', response.message);
