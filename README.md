@@ -1,9 +1,5 @@
 # Todo List Application
 
-### [Live demo of the app](https://ifarshgar.no/todo)
-
-(Demo only has the client side of the app setup) 
-
 <img src="client/src/images/app.png" alt="dashboard page" class="inline"/>
 
 ## Quick START
