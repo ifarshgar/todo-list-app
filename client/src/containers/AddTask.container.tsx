@@ -4,6 +4,7 @@ import { AddTask } from 'Views/AddTask.view';
 import Tooltip from '@mui/material/Tooltip';
 import Circle from '@mui/icons-material/Circle';
 import { persistTask } from 'Api/helper';
+import { v4 as uuid } from 'uuid';
 
 export const AddTaskContainer: React.FC<{
   categories: CategoryType[];
@@ -22,7 +23,8 @@ export const AddTaskContainer: React.FC<{
   };
 
   const makeNewId = () => {
-    return tasks.reduce((acc, task) => (task.id > acc ? task.id : acc + 1), 1);
+    // return tasks.reduce((acc, task) => (task.id > acc ? task.id : acc + 1), 1);
+    return uuid().replaceAll('-', '').substring(0, 8);
   };
 
   const getTime = () => {

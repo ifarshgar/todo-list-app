@@ -4,7 +4,7 @@ export type CategoryType = {
 };
 
 export type TaskType = {
-  id: number;
+  id: string;
   category: string;
   text: string;
   time: string;
