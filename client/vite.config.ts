@@ -11,12 +11,12 @@ export default defineConfig({
   base: 'https://ifarshgar.no/todo',
   resolve: {
     alias: {
-      'src': "/src",
-      'Api': path.resolve(__dirname, './src/api'),
-      'Common': path.resolve(__dirname, './src/common'),
-      'Containers': path.resolve(__dirname, './src/containers'),
-      'Images': path.resolve(__dirname, './src/images'),
-      'Views': path.resolve(__dirname, './src/views'),
+      src: '/src',
+      Api: path.resolve(__dirname, './src/api'),
+      Common: path.resolve(__dirname, './src/common'),
+      Containers: path.resolve(__dirname, './src/containers'),
+      Images: path.resolve(__dirname, './src/images'),
+      Views: path.resolve(__dirname, './src/views'),
     },
   },
 });
